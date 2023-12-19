@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8"> 
+  
+  <title>Blog</title>
+  
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+
+  <link rel="shortcut icon" href="..." 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+
+  <!--==Scroll-bar-script=============================--> 
+  <script>
+    let scrollPercentage = () => {
+        let scrollProgress = document.getElementById("progress"); 
+        let progressValue = document.getElementById("progress-value");
+        let pos = document.documentElement.scrollTop; 
+        let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight; 
+        let scrollValue = Math.round(pos * 100 / calcHeight); 
+        scrollProgress.style.background = 'conic-gradient(#e2d300c ${scrollValue}%, #2b2f38 ${scrollValue}%)'; 
+        progressValue.textcontent = '${scrollValue}%';
+    } 
+    
+    window.onscroll = scrollPercentage; 
+    window.onload = scrollPercentage;
+
+  </script>
+
+</head>
+
+<body> 
+
+
+    <!--==Page-Scroll-progress-bar=============--> 
+    <div id="progress">
+        <span id="progress-value"></span>
+    </div>
+
+
+  <!--==navigation=====--> 
+  <nav class="navigation">  
+
+    <!--==logo=====--> 
+    <a href="#" class="logo">Blog</a> 
+
+    <!--==menu=====--> 
+    <ul class="menu">
+      <li><a href="#">Home</a></li> 
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+        
+  </nav> 
+
+  <!--==page-container================-->
+  <div clas="page-container"> 
+    
+    <div class="top-bar"> 
+      <span>NB/<br/>Blog</span> 
+      <div class="article-number"><span>37</span><br/>Article</div>
+    </div> 
+
+
+    <!--==Blog-section==================--> 
+    <section id="blog"> 
+
+      
+      <!--==heading------------------->
+      <div class="blog-heading">
+        <h1>Música, cinema, trabalho e tudo mais que você quiser.</h1> 
+      </div> 
+
+      <!--==filter---------------------> 
+      <ul class="blog-filter">
+        <li class="list blog-filter-active" data-filter="todos">Todos</li> 
+        <li class="list" data-filter="música">musica</li>
+        <li class="list" data-filter="cinema">cinema</li>
+        <li class="list" data-filter="saude">saude</li>
+        <li class="list" data-filter="trabalho">trabalho</li> 
+        <li class="list" data-filter="exercicios">exercicios</li>
+        <li class="list" data-filter="novos">novos</li>
+
+      </ul> 
+
+
+      <!--==blog-box-container-------------------> 
+      <div class="blog-container"> 
+        
+        <!--box-1-------------> 
+        <a href="#" class="blog-box musica">
+
+          <!--img---------> 
+          <div class="blog-img"> 
+            <img src="..." alt="1">
+          </div> 
+
+          <!--text--------> 
+          <div clas="blog-text">
+            <span class="category">musica</span> 
+            <strong>Has covid eased some divisions?</strong> 
+            <span class="blog-post-time">June 9 - 5 min read</span>
+          </div>
+          
+        </a>  
+
+
+        <!--box-2-------------> 
+        <a href="#" class="blog-box cinema">
+
+          <!--img---------> 
+          <div class="blog-img"> 
+            <img src="..." alt="1">
+          </div> 
+
+          <!--text--------> 
+          <div clas="blog-text">
+            <span class="category">cinema</span> 
+            <strong>Has covid eased some divisions?</strong> 
+            <span class="blog-post-time">June 9 - 5 min read</span>
+          </div>
+
+        </a> 
+
+
+        <!--box-3-------------> 
+        <a href="#" class="blog-box saude">
+
+          <!--img---------> 
+          <div class="blog-img"> 
+            <img src="..." alt="1">
+          </div> 
+
+          <!--text--------> 
+          <div clas="blog-text">
+            <span class="category">saude</span> 
+            <strong>Has covid eased some divisions?</strong> 
+            <span class="blog-post-time">June 9 - 5 min read</span>
+          </div>
+
+        </a> 
+
+
+        <!--box-4-------------> 
+        <a href="#" class="blog-box trabalho">
+
+          <!--img---------> 
+          <div class="blog-img"> 
+            <img src="..." alt="1">
+          </div> 
+
+          <!--text--------> 
+          <div clas="blog-text">
+            <span class="category">trabalho</span> 
+            <strong>Has covid eased some divisions?</strong> 
+            <span class="blog-post-time">June 9 - 5 min read</span>
+          </div>
+
+        </a> 
+
+
+        <!--box-5-------------> 
+        <a href="#" class="blog-box exercicios">
+
+          <!--img---------> 
+          <div class="blog-img"> 
+            <img src="..." alt="1">
+          </div> 
+
+          <!--text--------> 
+          <div clas="blog-text">
+            <span class="category">exercicios</span> 
+            <strong>Has covid eased some divisions?</strong> 
+            <span class="blog-post-time">June 9 - 5 min read</span>
+          </div>
+
+        </a> 
+
+
+        <!--box-6-------------> 
+        <a href="#" class="blog-box novos">
+
+          <!--img---------> 
+          <div class="blog-img"> 
+            <img src="..." alt="1">
+          </div> 
+
+          <!--text--------> 
+          <div clas="blog-text">
+            <span class="category">novos</span> 
+            <strong>Has covid eased some divisions?</strong> 
+            <span class="blog-post-time">June 9 - 5 min read</span>
+          </div>
+
+        </a>  
+
+
+        <!--box-7-------------> 
+        <a href="#" class="blog-box cinema">
+
+          <!--img---------> 
+          <div class="blog-img"> 
+            <img src="..." alt="1">
+          </div> 
+
+          <!--text--------> 
+          <div clas="blog-text">
+            <span class="category">cinema</span> 
+            <strong>Has covid eased some divisions?</strong> 
+            <span class="blog-post-time">June 9 - 5 min read</span>
+          </div>
+
+        </a> 
+
+    </section>
+
+  </div>  
+
+  <!--==page-container-end=====================--> 
+
+
+  
+  <!--footer=====================--> 
+  <footer>
+    <div class="footer-container"> 
+
+      <!--heading------------->
+      <div class="footer-heading">  
+        <h4>Que tal parar de rolar, 
+          <br/>
+          e criar algo?
+        </h4> 
+
+        <h3>gentre em contato.</h3>
+      </div> 
+
+
+      <!--footer-content-----------------> 
+      <div class="footer-content">  
+
+        <!--box-1--------------->
+        <div class="footer-box"> 
+          <strong>explore</strong> 
+          <ul> 
+            <li><a href="#">Home</a></li>  
+            <li><a href="#">About</a></li>  
+            <li><a href="#">Project</a></li> 
+            <li><a href="#">Contact</a></li> 
+          </ul> 
+        </div> 
+
+
+        v<!--box-2--------------->
+        <div class="footer-box"> 
+          <strong>social</strong> 
+          <ul> 
+            <li><a href="#">instagram</a></li>  
+            <li><a href="#">github</a></li>  
+          </ul> 
+        </div>  
+
+
+        <!--box-3--------------->
+        <div class="footer-box"> 
+          <strong>contate</strong> 
+          <ul> 
+            <li><a href="#">fxfeh@xiu.io</a></li>  
+            <li><a href="#">+559999999999</a></li>  
+
+          </ul> 
+        </div> 
+
+
+        <!--box-4--------------->
+        <div class="footer-box"> 
+          <strong>xiu.io</strong> 
+          <ul> 
+            <li><a href="#">Xxxxxxxxxx</a></li>  
+            <li><a href="#">Brasil</a></li>  
+          </ul> 
+        </div> 
+
+        
+      </div>  
+
+
+      <!--footer-bottom----------------> 
+      <div class="footer-bottom-link"> 
+        <a href="#">privacy</a> 
+        <a href="#">site info</a> 
+        <a href="#">terms</a> 
+      </div> 
+
+
+      <!--copyright--> 
+      <div class="copyright"> 
+        <span>Made by Xiu</span> 
+        <span>© 2023 Xiu</span>
+      </div>
+
+    </div>
+  </footer>
+
+
+  
+
+  <!--==JQuery=====================--> 
+  <script src="js/jquey.js"></script> 
+
+  <!--==Script=====================--> 
+  <script type="text/javascript">
+    $(document).on('click','.blog-filter li', function(){ 
+      $(this).addClass('blog-filter-active').siblings().removeClass('blog-filter-active')
+    });  
+
+    /*--filter--------------------*/ 
+    $(document).ready(function(){
+      $('.list').click(function(){
+        const value = $(this).attr('data-filter'); 
+        if(value == 'all'){
+          $('.blog-box').show('1000'); 
+        } 
+        else{
+          $('.blog-box').not('.'+value).hide('1000'); 
+          $('.blog-box').filter('.'+value).show('1000');
+
+        }
+      });
+    }); 
+
+  </script>  
+
+  
+</body>
+
+</html>
